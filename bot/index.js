@@ -275,8 +275,22 @@ bot.on('new_chat_members', (ctx) => {
 })
 
 // ========== LAUNCH ==========
-bot.launch()
-console.log(`🌀 Trendova bot v2 running (AI: ${HAS_AI && AI_ENABLED_DEFAULT ? 'ON' : 'OFF'})`)
+// Retry launch with exponential backoff for 409 conflicts
+async function launchWithRetry(attempt = 1) {
+  try {
+    await bot.launch({ dropPendingUpdates: true })
+    console.log(`🌀 Trendova bot v2 running (AI: ${HAS_AI && AI_ENABLED_DEFAULT ? 'ON' : 'OFF'})`)
+  } catch (e) {
+    if (e.response?.error_code === 409 && attempt < 10) {
+      const wait = Math.min(30000, attempt * 3000)
+      console.log(`⏳ 409 conflict, retrying in ${wait}ms (attempt ${attempt})`)
+      await new Promise(r => setTimeout(r, wait))
+      return launchWithRetry(attempt + 1)
+    }
+    throw e
+  }
+}
+await launchWithRetry()
 notifyOwner(`🚀 Bot restarted (v2 hardened). Limits:
 • ${LIMITS.MAX_MSG_PER_MIN}/min per user
 • ${LIMITS.MAX_MSG_PER_HOUR}/hour per user
