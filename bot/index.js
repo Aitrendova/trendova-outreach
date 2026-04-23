@@ -243,7 +243,7 @@ bot.on('text', async (ctx) => {
   try {
     await ctx.sendChatAction('typing')
     const resp = await claude.messages.create({
-      model: 'claude-3-5-haiku-latest',
+      model: 'claude-haiku-4-5',
       max_tokens: 300,      // لا نعطي AI يطلع responses طويلة
       system: SYSTEM_PROMPT,
       messages: s.messages,
