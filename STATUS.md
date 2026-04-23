@@ -2,6 +2,13 @@
 
 **Updated:** 2026-04-23 20:00 GMT+3
 
+## 🚀 Live (2026-04-23)
+
+- **Website:** https://web-production-e0b22.up.railway.app
+- **Bot:** @Trendova_bot (✅ deployed & running)
+- **GitHub:** Aitrendova/trendova-outreach
+- **Railway Dashboard:** https://railway.com/project/977111ce-6268-439a-80cf-65a4ad3afbaa
+
 ## ✅ مكتمل
 
 ### Infrastructure
