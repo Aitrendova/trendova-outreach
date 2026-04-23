@@ -253,7 +253,11 @@ export default function Home() {
             </a>
           </div>
 
-          <p className="text-slate-600 text-xs">© 2026 Trendova · جميع الحقوق محفوظة</p>
+          <div className="flex items-center gap-4 text-slate-500 text-xs">
+            <a href="/faq" className="hover:text-white transition-colors">الأسئلة الشائعة</a>
+            <span>·</span>
+            <span>© 2026 Trendova</span>
+          </div>
         </div>
       </footer>
 
