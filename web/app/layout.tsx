@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://web-production-e0b22.up.railway.app'),
   title: 'Trendova — وكيل ذكاء اصطناعي لأعمالك',
   description: 'وكيل AI يرد على عملائك، يكتب محتواك، ويشتغل 24/7 بالعربي',
   icons: {
