@@ -7,3 +7,6 @@ build/
 .env.local
 *.log
 .DS_Store
+
+# bot
+bot/node_modules/
