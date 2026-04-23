@@ -219,8 +219,11 @@ export default function Home() {
           <h2 className="text-3xl font-black text-white mb-4">
             جاهز تبدأ؟ 🚀
           </h2>
-          <p className="text-slate-400 mb-8">
+          <p className="text-slate-400 mb-4">
             راسلنا وخلال ساعات نرسلك خطة مخصصة لعملك
+          </p>
+          <p className="text-slate-500 text-sm mb-8">
+            💳 طرق الدفع: تحويل بنكي · STCPay · PayPal · وغيرها — حسب الأنسب لك
           </p>
           <a
             href="mailto:aitrendova@gmail.com?subject=طلب%20demo"

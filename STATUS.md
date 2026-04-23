@@ -12,11 +12,14 @@
 - [x] Landing page (Next.js 14, TypeScript, Tailwind) — `web/`
 - [x] Dockerfile (multi-stage standalone) + railway.json
 
-## 🔄 قيد التنفيذ
-- [ ] Repo على GitHub (`aitrendova/trendova-outreach`)
+## ✅ خلّص (تحديث)
+- [x] Repo على GitHub — https://github.com/Aitrendova/trendova-outreach
+
+## ✅ LIVE 🚀
+- [x] Deploy على Railway — https://web-production-e0b22.up.railway.app
+- [x] Project ID: 977111ce-6268-439a-80cf-65a4ad3afbaa
 
 ## ⏭️ التالي
-- [ ] Deploy على Railway
 - [ ] كتابة 3 تغريدات إطلاق
 - [ ] أول فيديو TikTok قصير
 
